@@ -1,0 +1,116 @@
+id,stage,tactics,text,source,kind,note
+001,hook,old_friend,"Long time no see, how are you recently",propublica,real,
+002,hook,wrong_number;apology,"🙈Are you not Kevin? Sorry, I guess I added the wrong person, sorry",propublica,real,
+003,hook,wrong_number;wealth_signal,"Sorry, I made the wrong call. Since I have many business partners, my assistant saved the wrong number, please forgive me",propublica,real,
+004,hook,old_friend,"Hi David, I'm Vicky Ho. Don't you remember me?",npr,real,
+005,hook,wrong_number,Around for dinner today? Are you still in Boston?,npr,real,
+006,hook,wrong_number,"Hello, is this Mark?",pbs,real,
+007,hook,wrong_number;work_pretext,"Hey, Lisa, did you send those documents over yet?",pbs,real,
+008,hook,wrong_number,Hi there! Do you have time to talk today?,pbs,real,
+009,hook,fake_prior_contact;dating,Hey is this John? It's Amanda. We chatted on Tinder before…,pbs,real,
+010,hook,wrong_number;wealth_signal,Hi Caitlin I'm back from my trip to Napa Valley. Can you drop off my dog by tomorrow afternoon?,pbs,real,
+011,hook,fake_prior_contact,Hey your number looks familiar but I can't remember your name.,pbs,real,
+012,hook,wrong_number,"Hi Caitlin, are we still on for dinner at 7?",pbs,real,
+013,hook,wrong_number,Kyrie?? Is that you??,maxread,real,
+014,hook,wrong_number;wealth_signal,"Andy, will my custom mahogany furniture arrive next week?",maxread,real,
+015,hook,fake_prior_contact,"Hey, we met at the bar how are you",theweek,real,
+016,hook,wrong_number,do you want to get a coffee?,pbs,real,
+017,rapport,persona;small_talk,"I come from Hong Kong. Hong Kong is a metropolis with technology, finance and food. Have you ever been here",propublica,real,
+018,rapport,fate,"Acquaintance is fate, where are you from",propublica,real,
+019,rapport,flattery;small_talk,"Your place is a very beautiful place, I went there years ago",propublica,real,
+020,rapport,persona;sympathy,I see. My parents are taking care of my brother. I hope he will live well,propublica,real,
+021,rapport,sympathy,"Sorry things, but also hard for your parents",propublica,real,
+022,rapport,love_bombing,🥰I don't want you to be my student. I want you to be my wife.🥰,propublica,real,
+023,rapport,apology;flattery;persona,"Oh I'm so sorry to bother you! You seem very kind. I'm Lina, I just moved to San Diego 😊",pbs,real,recreated example
+024,rapport,fate;platform_move,Maybe this mistake is fate. Can we be friends? I use WhatsApp more.,pbs,real,recreated example
+025,rapport,flattery;persona,You have a very cool name. I am 32 years old and a divorced woman.,npr,real,
+026,rapport,daily_checkin;love_bombing,"Good morning. How did you sleep, my dear?",npr,real,
+027,rapport,daily_checkin;love_bombing,"Love, did you sleep well last night?",npr,real,
+028,rapport,sympathy,Because of your father,forbes,real,
+029,rapport,sympathy;care,I don't want you to work so hard,forbes,real,
+030,rapport,flattery;care,"You are very filial, so I am willing to help you",forbes,real,
+031,rapport,love_bombing,Do you miss me,forbes,real,
+032,rapport,love_bombing,I will accompany you,forbes,real,
+033,rapport,love_bombing,I'm serious about you,forbes,real,
+034,rapport,love_bombing;isolation,But you have me now,forbes,real,
+035,rapport,love_bombing,I hope I can be as important as your father,forbes,real,
+036,rapport,isolation;secrecy,"He said our connection was special and private, convincing me to keep it a secret from my friends and family.",cispa,real,victim paraphrase
+037,rapport,future_promise,"We would talk about our future plans, mentioning how investing together would help us buy a house.",cispa,real,victim paraphrase
+038,rapport,script:pressure_point,Mention the difficulties and pressures the customers need to face in their lives,manual,script,"instruction to operators, not a message"
+039,rapport,script:fomo,Say that opportunities have to be seized; ask them if they have ever missed an opportunity.,manual,script,"instruction to operators, not a message"
+040,rapport,script:future_promise,"Creates dreams of perfection, allow customers to fantasize living better about their dream life.",manual,script,"instruction to operators, not a message"
+041,rapport,script:rapport,make the customers feel happy and comfortable,theweek,script,"instruction to operators, not a message"
+042,rapport,script:dependency,create dependency,theweek,script,"instruction to operators, not a message"
+043,rapport,script:love_bombing,make him fall for you,theweek,script,"instruction to operators, not a message"
+044,pitch,segue,I'm reading a book,propublica,real,
+045,pitch,segue;investment_mention,A book about investing in gold,propublica,real,
+046,pitch,script:side_income,"I am making extra money (lots of free time, does not affect regular chatting)",manual,script,instruction to operators
+047,pitch,script:trading_mention,I am looking at trend/candlestick charts (preparing to make money on WeChat),manual,script,instruction to operators
+048,pitch,script:proof_of_profit,Profit screenshot,manual,script,instruction to operators
+049,pitch,insider_tip;authority,Uncle's call is just to tell me the news of the evening,forbes,real,
+050,pitch,low_risk_framing,No money is needed.,forbes,real,
+051,pitch,authority,"If you want to make money, just listen to me",forbes,real,
+052,pitch,guaranteed_return,"It's definitely safe, I have been for many years",forbes,real,
+053,pitch,guaranteed_return;insider_tip,"Trust me, the message is 100% accurate",forbes,real,
+054,pitch,emotional_leverage,The money you earn can better help your father,forbes,real,
+055,pitch,platform_instruction;crypto,Find USDT to buy,npr,real,
+056,pitch,low_risk_framing;crypto,USDT is not affected by any rise or fall in the currency market.,npr,real,
+057,pitch,wealth_signal,"I see the price is $142,200. As long as you like this, money is nothing.",npr,real,
+058,pitch,platform_move;future_promise,"After talking about the future, the scammer told me that for a better retirement I should invest in Hodlsofltd.com.",cispa,real,victim paraphrase
+059,pitch,future_promise;crypto,"He told me that if I invested in crypto with him, we could buy a house together and start a life.",cispa,real,victim paraphrase
+060,pressure,reassurance,"When you need money, you can ask for it at any time",propublica,real,
+061,pressure,risk_denial,"This is not a risk, it is called maximizing profit",propublica,real,
+062,pressure,borrow_leverage,Your 401K can't move?,propublica,real,
+063,pressure,risk_denial,Then you can earn it back with a fine.,propublica,real,
+064,pressure,borrow_leverage,"Borrowing money from the bank is not a big deal, I often do",propublica,real,
+065,pressure,borrow_leverage;flattery,"You are a wise man, this is borrowing a chicken to lay eggs",propublica,real,
+066,pressure,borrow_leverage,Really rich people use bank money to invest,propublica,real,
+067,pressure,instruction,I suggest you sell the stock,forbes,real,
+068,pressure,fomo,Don't ignore this big market,forbes,real,
+069,pressure,emotional_leverage,Your father wants you to be better,forbes,real,
+070,pressure,escalation,"You now have 300,000 principal, if possible, try to reach 500,000.",forbes,real,
+071,pressure,borrow_leverage,You can try to borrow money from the bank,forbes,real,
+072,pressure,escalation,Best to reach 1M,forbes,real,
+073,pressure,escalation,"Buy once at 500K, buy multiple times at 1M",forbes,real,
+074,pressure,belittling,You don't even know the big market,forbes,real,
+075,pressure,guaranteed_return,Hundred percent,forbes,real,
+076,pressure,reassurance,"It's OK. I was nervous when I first traded, too. You have to relax. It's not too complicated.",npr,real,
+077,pressure,urgency;platform_instruction,Get ready. We have to be ready by 4:30. You have to make sure you have 500 tethers in ZBXS by then.,npr,real,
+078,pressure,risk_denial,It doesn't matter. We're going to make so much money on the nodes.,npr,real,
+079,pressure,urgency;guilt,"Why you don't pick up my phone? I'm waiting for your reply me, OK?",npr,real,voice memo
+080,pressure,emotional_leverage,Has your daughter's health improved?,npr,real,
+081,extraction,add_principal,"If the principal is not enough, it cannot be supported to the profit point.",propublica,real,
+082,extraction,reassurance,"Don't worry,",propublica,real,
+083,extraction,add_principal;loss_recovery,Prepare the funds and earn them back.,propublica,real,
+084,extraction,loss_recovery,I'll bring you back.,forbes,real,
+085,extraction,add_principal,What you need to do now is to raise funds.,forbes,real,
+086,extraction,add_principal,Find money,forbes,real,
+087,extraction,fee_demand;fake_support,they told me my account was flagged and needed a deposit to verify my identity,cispa,real,victim paraphrase
+088,cutoff,taunt,"I'm a liar, too.",propublica,real,
+089,cutoff,taunt,"But I am very kind, I only cheated you out of 30K, thank you for 30K",propublica,real,
+090,cutoff,taunt,Surprise or surprise. I'm not surprised.,propublica,real,
+091,cutoff,belittling,Hurting yourself is a sign of incompetence,forbes,real,
+092,cutoff,dismissal,Go to the police to help you,forbes,real,
+093,cutoff,dismissal,Please don't call me,forbes,real,
+094,cutoff,dismissal,There is nothing I can do to help.,forbes,real,
+095,cutoff,deflection,"Oh, oh, it's not what you think.",npr,real,
+096,benign,control,"Hey, are we still on for dinner at 7? I can be there by 6:45.",synthetic,synthetic,benign look-alike for false-positive testing
+097,benign,control,"Sorry, wrong number! Have a good one.",synthetic,synthetic,benign look-alike for false-positive testing
+098,benign,control,Long time no see! Are you coming to the reunion in June?,synthetic,synthetic,benign look-alike for false-positive testing
+099,benign,control,Good morning! Did you sleep okay? Big day today.,synthetic,synthetic,benign look-alike for false-positive testing
+100,benign,control,Can I borrow $20 for lunch? I'll Venmo you back tonight.,synthetic,synthetic,benign look-alike for false-positive testing
+101,benign,control,My advisor suggested moving some of my 401k into index funds. Thoughts?,synthetic,synthetic,benign look-alike for false-positive testing
+102,benign,control,"I've been reading a book about personal finance, it's actually pretty good.",synthetic,synthetic,benign look-alike for false-positive testing
+103,benign,control,Mom asked if you can pick up grandpa from the clinic on Friday.,synthetic,synthetic,benign look-alike for false-positive testing
+104,benign,control,"The market dropped again today, glad I'm not day trading anymore.",synthetic,synthetic,benign look-alike for false-positive testing
+105,benign,control,"Just got back from Napa, the wine was incredible. We should go together sometime.",synthetic,synthetic,benign look-alike for false-positive testing
+106,benign,control,"Hey it's Amanda from the hackathon, still want to grab coffee this week?",synthetic,synthetic,benign look-alike for false-positive testing
+107,benign,control,Your package is out for delivery and will arrive by 8 PM.,synthetic,synthetic,benign look-alike for false-positive testing
+108,benign,control,Reminder: your dentist appointment is tomorrow at 10:30.,synthetic,synthetic,benign look-alike for false-positive testing
+109,benign,control,"I miss you, call me when you land ❤️",synthetic,synthetic,benign look-alike for false-positive testing
+110,benign,control,Don't forget to transfer rent before the 1st.,synthetic,synthetic,benign look-alike for false-positive testing
+111,benign,control,Can you send me the documents for the grant application?,synthetic,synthetic,benign look-alike for false-positive testing
+112,benign,control,"I'm nervous about the interview tomorrow, any tips?",synthetic,synthetic,benign look-alike for false-positive testing
+113,benign,control,Let's keep the surprise party a secret from Dad!,synthetic,synthetic,benign look-alike for false-positive testing
+114,benign,control,"Our bank is offering 4.5% on a 12-month CD, want me to send the link?",synthetic,synthetic,benign look-alike for false-positive testing
+115,benign,control,"Trust me, this restaurant is 100% worth the drive.",synthetic,synthetic,benign look-alike for false-positive testing

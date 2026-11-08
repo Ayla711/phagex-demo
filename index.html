@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PhageX · Scam conversation detector</title>
+    <meta
+      name="description"
+      content="A rule-based prototype that reads a chat as it unfolds, tags manipulation tactics and warns when a pig-butchering scam moves from friendship to money. Runs entirely in your browser."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="https://yuanqianayla.com/project/phagex/">← PhageX case study</a>
+      <span class="privacy" title="Nothing you type leaves this page">Runs locally · nothing is uploaded</span>
+    </header>
+
+    <main class="shell">
+      <section class="intro">
+        <p class="eyebrow">Prototype · rule-based detection</p>
+        <h1>Can software notice a scam before you do?</h1>
+        <p class="lead">
+          PhageX watches a conversation the way an anti-fraud investigator would: not one message at a time, but as a
+          story. Friendly openers are fine. Affection is fine. Money after affection is the pattern. Play a scripted
+          chat or paste your own, and watch the risk meter and the stage change as the conversation moves.
+        </p>
+      </section>
+
+      <section class="scenarios" aria-label="Scripted conversations">
+        <div class="tabs" role="tablist" id="tabs"></div>
+      </section>
+
+      <section class="stage-grid">
+        <div class="phone" aria-live="polite">
+          <div class="phone-bar"><span class="dot"></span><span id="phone-title">Unknown number</span></div>
+          <ol class="chat" id="chat"></ol>
+          <div class="controls">
+            <button id="next" class="btn primary">Next message</button>
+            <button id="play" class="btn">Play all</button>
+            <button id="reset" class="btn ghost">Reset</button>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <div class="meter-block">
+            <div class="meter-head">
+              <span class="label">Risk</span>
+              <span class="risk-num" id="risk-num">0</span>
+            </div>
+            <div class="meter" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="meter">
+              <span class="meter-fill" id="meter-fill"></span>
+              <span class="tick" style="left: 20%"></span>
+              <span class="tick" style="left: 50%"></span>
+            </div>
+            <div class="meter-legend"><span>safe</span><span>careful</span><span>danger</span></div>
+          </div>
+
+          <ol class="stages" id="stages">
+            <li data-stage="hook"><b>Trapping</b><span>first contact</span></li>
+            <li data-stage="rapport"><b>Raising</b><span>building trust</span></li>
+            <li data-stage="pitch"><b>Killing</b><span>money comes up</span></li>
+            <li data-stage="pressure"><b>Pushing</b><span>pay more, faster</span></li>
+            <li data-stage="extraction"><b>Killed</b><span>funds extracted</span></li>
+          </ol>
+
+          <div class="alerts" id="alerts">
+            <p class="alerts-empty">No warning yet. PhageX stays quiet until the conversation turns toward money.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="paste">
+        <h2>Try your own conversation</h2>
+        <p>
+          One message per line. Start a line with <code>me:</code> for your own replies; everything else is treated as
+          the other person. Nothing leaves your browser.
+        </p>
+        <textarea id="paste-input" rows="6" placeholder="Hi, is this Mark?&#10;me: No, wrong number&#10;Sorry! Maybe this is fate. Where are you from?"></textarea>
+        <div class="controls">
+          <button id="paste-run" class="btn primary">Analyze</button>
+        </div>
+      </section>
+
+      <section class="how">
+        <h2>How it works</h2>
+        <div class="how-grid">
+          <article>
+            <h3>29 tactic patterns</h3>
+            <p>
+              Each incoming message is matched against patterns drawn from real cases: the wrong-number opener, “fate”,
+              love-bombing, asking for secrecy, insider tips, guaranteed returns, “borrow from the bank”, fees to
+              withdraw. Every match comes with a plain-language reason.
+            </p>
+          </article>
+          <article>
+            <h3>Stage, not keywords</h3>
+            <p>
+              The conversation moves through the stages victims describe — Trapping, Raising, Killing. Money talk weighs
+              1.5× once affection has appeared, and a money request wrapped in affection or a hardship story adds a
+              bonus. A warning fires only when the stage advances, never on a single warm message.
+            </p>
+          </article>
+          <article>
+            <h3>Tested on public cases</h3>
+            <p>
+              On 95 scammer lines from ProPublica, Forbes, NPR and a leaked training manual, 87% receive a tactic tag.
+              On 17 real chat screenshots from the SafeRoute dataset, 10 of 11 scams reach <em>danger</em> and all 4 safe
+              chats stay <em>safe</em>; 20 benign look-alikes produce no false alarm. Rules were tuned on this same data,
+              so the next step is testing on conversations it has never seen.
+            </p>
+          </article>
+          <article>
+            <h3>What it can't do</h3>
+            <p>
+              English only. Regular expressions, not a language model — paraphrases slip through, and it has never met
+              a real scammer who adapts. It is a design probe to study how and when a warning should interrupt, not a
+              product.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>PhageX detector · Yuanqian (Ayla) Liu</span>
+      <span>
+        <a href="https://github.com/Ayla711/phagex-demo">Rules on GitHub</a> ·
+        <a href="https://yuanqianayla.com/project/phagex/">Case study</a>
+      </span>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

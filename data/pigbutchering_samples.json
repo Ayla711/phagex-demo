@@ -1,0 +1,2806 @@
+{
+ "sources": {
+  "propublica": {
+   "name": "ProPublica, “What’s a Pig Butchering Scam? Here’s How to Avoid Falling Victim to One” (2022)",
+   "url": "https://www.propublica.org/article/whats-a-pig-butchering-scam-heres-how-to-avoid-falling-victim-to-one"
+  },
+  "forbes": {
+   "name": "Forbes, “How One Man Lost $1 Million To A Crypto ‘Super Scam’ Called Pig Butchering” (2022)",
+   "url": "https://www.forbes.com/sites/cyrusfarivar/2022/09/09/pig-butchering-crypto-super-scam/"
+  },
+  "npr": {
+   "name": "NPR Planet Money transcript with Zeke Faux / PJ Vogt (2024)",
+   "url": "https://www.npr.org/transcripts/1253043749"
+  },
+  "pbs": {
+   "name": "Pause Before Send roundup citing FTC, FBI El Paso, BBB, Indiana IOT, WGAL, ABC7, PBS (2025)",
+   "url": "https://pausebeforesend.com/blog/wrong-number-text-scam/"
+  },
+  "manual": {
+   "name": "Leaked 2019 Chinese training manual (4th ed.), translated; reprinted by SCARS Institute",
+   "url": "https://romancescamsnow.com/pig-butchering-scam-sha-zhu-pan-training-manuals/"
+  },
+  "maxread": {
+   "name": "Max Read, “What’s the deal with all those weird wrong-number texts?” (2022)",
+   "url": "https://maxread.substack.com/p/whats-the-deal-with-all-those-weird"
+  },
+  "theweek": {
+   "name": "The Week, “Texts from a scammer” (2023)",
+   "url": "https://theweek.com/tech/texts-from-scammer-pig-butchering"
+  },
+  "cispa": {
+   "name": "Acharya et al., “An Explorative Study of Pig Butchering Scams”, arXiv 2412.15423 (victim-reported paraphrases)",
+   "url": "https://arxiv.org/pdf/2412.15423"
+  },
+  "synthetic": {
+   "name": "Written for this project to cover gaps / benign controls",
+   "url": ""
+  },
+  "hf_saferoute": {
+   "name": "Rickaym/saferoute-scam-screenshots — real chat screenshots transcribed, CC BY-NC 4.0",
+   "url": "https://huggingface.co/datasets/Rickaym/saferoute-scam-screenshots"
+  }
+ },
+ "stages": [
+  "hook",
+  "rapport",
+  "pitch",
+  "pressure",
+  "extraction",
+  "cutoff",
+  "benign"
+ ],
+ "rows": [
+  {
+   "id": "001",
+   "stage": "hook",
+   "tactics": "old_friend",
+   "text": "Long time no see, how are you recently",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "002",
+   "stage": "hook",
+   "tactics": "wrong_number;apology",
+   "text": "🙈Are you not Kevin? Sorry, I guess I added the wrong person, sorry",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "003",
+   "stage": "hook",
+   "tactics": "wrong_number;wealth_signal",
+   "text": "Sorry, I made the wrong call. Since I have many business partners, my assistant saved the wrong number, please forgive me",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "004",
+   "stage": "hook",
+   "tactics": "old_friend",
+   "text": "Hi David, I'm Vicky Ho. Don't you remember me?",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "005",
+   "stage": "hook",
+   "tactics": "wrong_number",
+   "text": "Around for dinner today? Are you still in Boston?",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "006",
+   "stage": "hook",
+   "tactics": "wrong_number",
+   "text": "Hello, is this Mark?",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "007",
+   "stage": "hook",
+   "tactics": "wrong_number;work_pretext",
+   "text": "Hey, Lisa, did you send those documents over yet?",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "008",
+   "stage": "hook",
+   "tactics": "wrong_number",
+   "text": "Hi there! Do you have time to talk today?",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "009",
+   "stage": "hook",
+   "tactics": "fake_prior_contact;dating",
+   "text": "Hey is this John? It's Amanda. We chatted on Tinder before…",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "010",
+   "stage": "hook",
+   "tactics": "wrong_number;wealth_signal",
+   "text": "Hi Caitlin I'm back from my trip to Napa Valley. Can you drop off my dog by tomorrow afternoon?",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "011",
+   "stage": "hook",
+   "tactics": "fake_prior_contact",
+   "text": "Hey your number looks familiar but I can't remember your name.",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "012",
+   "stage": "hook",
+   "tactics": "wrong_number",
+   "text": "Hi Caitlin, are we still on for dinner at 7?",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "013",
+   "stage": "hook",
+   "tactics": "wrong_number",
+   "text": "Kyrie?? Is that you??",
+   "source": "maxread",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "014",
+   "stage": "hook",
+   "tactics": "wrong_number;wealth_signal",
+   "text": "Andy, will my custom mahogany furniture arrive next week?",
+   "source": "maxread",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "015",
+   "stage": "hook",
+   "tactics": "fake_prior_contact",
+   "text": "Hey, we met at the bar how are you",
+   "source": "theweek",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "016",
+   "stage": "hook",
+   "tactics": "wrong_number",
+   "text": "do you want to get a coffee?",
+   "source": "pbs",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "017",
+   "stage": "rapport",
+   "tactics": "persona;small_talk",
+   "text": "I come from Hong Kong. Hong Kong is a metropolis with technology, finance and food. Have you ever been here",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "018",
+   "stage": "rapport",
+   "tactics": "fate",
+   "text": "Acquaintance is fate, where are you from",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "019",
+   "stage": "rapport",
+   "tactics": "flattery;small_talk",
+   "text": "Your place is a very beautiful place, I went there years ago",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "020",
+   "stage": "rapport",
+   "tactics": "persona;sympathy",
+   "text": "I see. My parents are taking care of my brother. I hope he will live well",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "021",
+   "stage": "rapport",
+   "tactics": "sympathy",
+   "text": "Sorry things, but also hard for your parents",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "022",
+   "stage": "rapport",
+   "tactics": "love_bombing",
+   "text": "🥰I don't want you to be my student. I want you to be my wife.🥰",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "023",
+   "stage": "rapport",
+   "tactics": "apology;flattery;persona",
+   "text": "Oh I'm so sorry to bother you! You seem very kind. I'm Lina, I just moved to San Diego 😊",
+   "source": "pbs",
+   "kind": "real",
+   "note": "recreated example"
+  },
+  {
+   "id": "024",
+   "stage": "rapport",
+   "tactics": "fate;platform_move",
+   "text": "Maybe this mistake is fate. Can we be friends? I use WhatsApp more.",
+   "source": "pbs",
+   "kind": "real",
+   "note": "recreated example"
+  },
+  {
+   "id": "025",
+   "stage": "rapport",
+   "tactics": "flattery;persona",
+   "text": "You have a very cool name. I am 32 years old and a divorced woman.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "026",
+   "stage": "rapport",
+   "tactics": "daily_checkin;love_bombing",
+   "text": "Good morning. How did you sleep, my dear?",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "027",
+   "stage": "rapport",
+   "tactics": "daily_checkin;love_bombing",
+   "text": "Love, did you sleep well last night?",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "028",
+   "stage": "rapport",
+   "tactics": "sympathy",
+   "text": "Because of your father",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "029",
+   "stage": "rapport",
+   "tactics": "sympathy;care",
+   "text": "I don't want you to work so hard",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "030",
+   "stage": "rapport",
+   "tactics": "flattery;care",
+   "text": "You are very filial, so I am willing to help you",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "031",
+   "stage": "rapport",
+   "tactics": "love_bombing",
+   "text": "Do you miss me",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "032",
+   "stage": "rapport",
+   "tactics": "love_bombing",
+   "text": "I will accompany you",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "033",
+   "stage": "rapport",
+   "tactics": "love_bombing",
+   "text": "I'm serious about you",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "034",
+   "stage": "rapport",
+   "tactics": "love_bombing;isolation",
+   "text": "But you have me now",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "035",
+   "stage": "rapport",
+   "tactics": "love_bombing",
+   "text": "I hope I can be as important as your father",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "036",
+   "stage": "rapport",
+   "tactics": "isolation;secrecy",
+   "text": "He said our connection was special and private, convincing me to keep it a secret from my friends and family.",
+   "source": "cispa",
+   "kind": "real",
+   "note": "victim paraphrase"
+  },
+  {
+   "id": "037",
+   "stage": "rapport",
+   "tactics": "future_promise",
+   "text": "We would talk about our future plans, mentioning how investing together would help us buy a house.",
+   "source": "cispa",
+   "kind": "real",
+   "note": "victim paraphrase"
+  },
+  {
+   "id": "038",
+   "stage": "rapport",
+   "tactics": "script:pressure_point",
+   "text": "Mention the difficulties and pressures the customers need to face in their lives",
+   "source": "manual",
+   "kind": "script",
+   "note": "instruction to operators, not a message"
+  },
+  {
+   "id": "039",
+   "stage": "rapport",
+   "tactics": "script:fomo",
+   "text": "Say that opportunities have to be seized; ask them if they have ever missed an opportunity.",
+   "source": "manual",
+   "kind": "script",
+   "note": "instruction to operators, not a message"
+  },
+  {
+   "id": "040",
+   "stage": "rapport",
+   "tactics": "script:future_promise",
+   "text": "Creates dreams of perfection, allow customers to fantasize living better about their dream life.",
+   "source": "manual",
+   "kind": "script",
+   "note": "instruction to operators, not a message"
+  },
+  {
+   "id": "041",
+   "stage": "rapport",
+   "tactics": "script:rapport",
+   "text": "make the customers feel happy and comfortable",
+   "source": "theweek",
+   "kind": "script",
+   "note": "instruction to operators, not a message"
+  },
+  {
+   "id": "042",
+   "stage": "rapport",
+   "tactics": "script:dependency",
+   "text": "create dependency",
+   "source": "theweek",
+   "kind": "script",
+   "note": "instruction to operators, not a message"
+  },
+  {
+   "id": "043",
+   "stage": "rapport",
+   "tactics": "script:love_bombing",
+   "text": "make him fall for you",
+   "source": "theweek",
+   "kind": "script",
+   "note": "instruction to operators, not a message"
+  },
+  {
+   "id": "044",
+   "stage": "pitch",
+   "tactics": "segue",
+   "text": "I'm reading a book",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "045",
+   "stage": "pitch",
+   "tactics": "segue;investment_mention",
+   "text": "A book about investing in gold",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "046",
+   "stage": "pitch",
+   "tactics": "script:side_income",
+   "text": "I am making extra money (lots of free time, does not affect regular chatting)",
+   "source": "manual",
+   "kind": "script",
+   "note": "instruction to operators"
+  },
+  {
+   "id": "047",
+   "stage": "pitch",
+   "tactics": "script:trading_mention",
+   "text": "I am looking at trend/candlestick charts (preparing to make money on WeChat)",
+   "source": "manual",
+   "kind": "script",
+   "note": "instruction to operators"
+  },
+  {
+   "id": "048",
+   "stage": "pitch",
+   "tactics": "script:proof_of_profit",
+   "text": "Profit screenshot",
+   "source": "manual",
+   "kind": "script",
+   "note": "instruction to operators"
+  },
+  {
+   "id": "049",
+   "stage": "pitch",
+   "tactics": "insider_tip;authority",
+   "text": "Uncle's call is just to tell me the news of the evening",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "050",
+   "stage": "pitch",
+   "tactics": "low_risk_framing",
+   "text": "No money is needed.",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "051",
+   "stage": "pitch",
+   "tactics": "authority",
+   "text": "If you want to make money, just listen to me",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "052",
+   "stage": "pitch",
+   "tactics": "guaranteed_return",
+   "text": "It's definitely safe, I have been for many years",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "053",
+   "stage": "pitch",
+   "tactics": "guaranteed_return;insider_tip",
+   "text": "Trust me, the message is 100% accurate",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "054",
+   "stage": "pitch",
+   "tactics": "emotional_leverage",
+   "text": "The money you earn can better help your father",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "055",
+   "stage": "pitch",
+   "tactics": "platform_instruction;crypto",
+   "text": "Find USDT to buy",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "056",
+   "stage": "pitch",
+   "tactics": "low_risk_framing;crypto",
+   "text": "USDT is not affected by any rise or fall in the currency market.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "057",
+   "stage": "pitch",
+   "tactics": "wealth_signal",
+   "text": "I see the price is $142,200. As long as you like this, money is nothing.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "058",
+   "stage": "pitch",
+   "tactics": "platform_move;future_promise",
+   "text": "After talking about the future, the scammer told me that for a better retirement I should invest in Hodlsofltd.com.",
+   "source": "cispa",
+   "kind": "real",
+   "note": "victim paraphrase"
+  },
+  {
+   "id": "059",
+   "stage": "pitch",
+   "tactics": "future_promise;crypto",
+   "text": "He told me that if I invested in crypto with him, we could buy a house together and start a life.",
+   "source": "cispa",
+   "kind": "real",
+   "note": "victim paraphrase"
+  },
+  {
+   "id": "060",
+   "stage": "pressure",
+   "tactics": "reassurance",
+   "text": "When you need money, you can ask for it at any time",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "061",
+   "stage": "pressure",
+   "tactics": "risk_denial",
+   "text": "This is not a risk, it is called maximizing profit",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "062",
+   "stage": "pressure",
+   "tactics": "borrow_leverage",
+   "text": "Your 401K can't move?",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "063",
+   "stage": "pressure",
+   "tactics": "risk_denial",
+   "text": "Then you can earn it back with a fine.",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "064",
+   "stage": "pressure",
+   "tactics": "borrow_leverage",
+   "text": "Borrowing money from the bank is not a big deal, I often do",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "065",
+   "stage": "pressure",
+   "tactics": "borrow_leverage;flattery",
+   "text": "You are a wise man, this is borrowing a chicken to lay eggs",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "066",
+   "stage": "pressure",
+   "tactics": "borrow_leverage",
+   "text": "Really rich people use bank money to invest",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "067",
+   "stage": "pressure",
+   "tactics": "instruction",
+   "text": "I suggest you sell the stock",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "068",
+   "stage": "pressure",
+   "tactics": "fomo",
+   "text": "Don't ignore this big market",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "069",
+   "stage": "pressure",
+   "tactics": "emotional_leverage",
+   "text": "Your father wants you to be better",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "070",
+   "stage": "pressure",
+   "tactics": "escalation",
+   "text": "You now have 300,000 principal, if possible, try to reach 500,000.",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "071",
+   "stage": "pressure",
+   "tactics": "borrow_leverage",
+   "text": "You can try to borrow money from the bank",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "072",
+   "stage": "pressure",
+   "tactics": "escalation",
+   "text": "Best to reach 1M",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "073",
+   "stage": "pressure",
+   "tactics": "escalation",
+   "text": "Buy once at 500K, buy multiple times at 1M",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "074",
+   "stage": "pressure",
+   "tactics": "belittling",
+   "text": "You don't even know the big market",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "075",
+   "stage": "pressure",
+   "tactics": "guaranteed_return",
+   "text": "Hundred percent",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "076",
+   "stage": "pressure",
+   "tactics": "reassurance",
+   "text": "It's OK. I was nervous when I first traded, too. You have to relax. It's not too complicated.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "077",
+   "stage": "pressure",
+   "tactics": "urgency;platform_instruction",
+   "text": "Get ready. We have to be ready by 4:30. You have to make sure you have 500 tethers in ZBXS by then.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "078",
+   "stage": "pressure",
+   "tactics": "risk_denial",
+   "text": "It doesn't matter. We're going to make so much money on the nodes.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "079",
+   "stage": "pressure",
+   "tactics": "urgency;guilt",
+   "text": "Why you don't pick up my phone? I'm waiting for your reply me, OK?",
+   "source": "npr",
+   "kind": "real",
+   "note": "voice memo"
+  },
+  {
+   "id": "080",
+   "stage": "pressure",
+   "tactics": "emotional_leverage",
+   "text": "Has your daughter's health improved?",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "081",
+   "stage": "extraction",
+   "tactics": "add_principal",
+   "text": "If the principal is not enough, it cannot be supported to the profit point.",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "082",
+   "stage": "extraction",
+   "tactics": "reassurance",
+   "text": "Don't worry,",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "083",
+   "stage": "extraction",
+   "tactics": "add_principal;loss_recovery",
+   "text": "Prepare the funds and earn them back.",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "084",
+   "stage": "extraction",
+   "tactics": "loss_recovery",
+   "text": "I'll bring you back.",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "085",
+   "stage": "extraction",
+   "tactics": "add_principal",
+   "text": "What you need to do now is to raise funds.",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "086",
+   "stage": "extraction",
+   "tactics": "add_principal",
+   "text": "Find money",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "087",
+   "stage": "extraction",
+   "tactics": "fee_demand;fake_support",
+   "text": "they told me my account was flagged and needed a deposit to verify my identity",
+   "source": "cispa",
+   "kind": "real",
+   "note": "victim paraphrase"
+  },
+  {
+   "id": "088",
+   "stage": "cutoff",
+   "tactics": "taunt",
+   "text": "I'm a liar, too.",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "089",
+   "stage": "cutoff",
+   "tactics": "taunt",
+   "text": "But I am very kind, I only cheated you out of 30K, thank you for 30K",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "090",
+   "stage": "cutoff",
+   "tactics": "taunt",
+   "text": "Surprise or surprise. I'm not surprised.",
+   "source": "propublica",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "091",
+   "stage": "cutoff",
+   "tactics": "belittling",
+   "text": "Hurting yourself is a sign of incompetence",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "092",
+   "stage": "cutoff",
+   "tactics": "dismissal",
+   "text": "Go to the police to help you",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "093",
+   "stage": "cutoff",
+   "tactics": "dismissal",
+   "text": "Please don't call me",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "094",
+   "stage": "cutoff",
+   "tactics": "dismissal",
+   "text": "There is nothing I can do to help.",
+   "source": "forbes",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "095",
+   "stage": "cutoff",
+   "tactics": "deflection",
+   "text": "Oh, oh, it's not what you think.",
+   "source": "npr",
+   "kind": "real",
+   "note": ""
+  },
+  {
+   "id": "096",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Hey, are we still on for dinner at 7? I can be there by 6:45.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "097",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Sorry, wrong number! Have a good one.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "098",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Long time no see! Are you coming to the reunion in June?",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "099",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Good morning! Did you sleep okay? Big day today.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "100",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Can I borrow $20 for lunch? I'll Venmo you back tonight.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "101",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "My advisor suggested moving some of my 401k into index funds. Thoughts?",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "102",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "I've been reading a book about personal finance, it's actually pretty good.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "103",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Mom asked if you can pick up grandpa from the clinic on Friday.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "104",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "The market dropped again today, glad I'm not day trading anymore.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "105",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Just got back from Napa, the wine was incredible. We should go together sometime.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "106",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Hey it's Amanda from the hackathon, still want to grab coffee this week?",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "107",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Your package is out for delivery and will arrive by 8 PM.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "108",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Reminder: your dentist appointment is tomorrow at 10:30.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "109",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "I miss you, call me when you land ❤️",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "110",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Don't forget to transfer rent before the 1st.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "111",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Can you send me the documents for the grant application?",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "112",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "I'm nervous about the interview tomorrow, any tips?",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "113",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Let's keep the surprise party a secret from Dad!",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "114",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Our bank is offering 4.5% on a 12-month CD, want me to send the link?",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  },
+  {
+   "id": "115",
+   "stage": "benign",
+   "tactics": "control",
+   "text": "Trust me, this restaurant is 100% worth the drive.",
+   "source": "synthetic",
+   "kind": "synthetic",
+   "note": "benign look-alike for false-positive testing"
+  }
+ ],
+ "conversations": [
+  {
+   "id": "real-other-002",
+   "subset": "real",
+   "app": "other",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "wrong_number",
+     "variants": [
+      "wrong number",
+      "added the wrong person",
+      "saved the wrong number"
+     ]
+    },
+    {
+     "id": "hong_kong",
+     "variants": [
+      "Hong Kong"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "Long time no see, how are you",
+    "Are you not [NAME]? Sorry, I guess",
+    "I added the wrong person",
+    "Not [NAME]",
+    "Sorry. I must have saved the wrong",
+    "number, please forgive me",
+    "No prob. What country are you",
+    "calling from?",
+    "I come from Hong Kong. Have",
+    "you ever been here",
+    "Where are you from",
+    "I'm from Vancouver originally",
+    "Your city is very beautiful, I",
+    "went there years ago"
+   ],
+   "raw": "[NAME]\nAPR 10, 6:25 PM\nLong time no see, how are you\nAre you not [NAME]? Sorry, I guess\nI added the wrong person\nNot [NAME]\nSorry. I must have saved the wrong\nnumber, please forgive me\nNo prob. What country are you\ncalling from?\nI come from Hong Kong. Have\nyou ever been here\nWhere are you from\nI'm from Vancouver originally\nYour city is very beautiful, I\nwent there years ago\nEnter your message...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-telegram-001",
+   "subset": "real",
+   "app": "telegram",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good"
+   ],
+   "must_mention": [
+    {
+     "id": "investment",
+     "variants": [
+      "smart investments",
+      "private investment group",
+      "investing",
+      "ရင်းနှီးမြှုပ်နှံမှု",
+      "การลงทุน",
+      "investasi",
+      "pamumuhunan"
+     ]
+    },
+    {
+     "id": "exclusive_offer",
+     "variants": [
+      "exclusive stuff, not available to the public",
+      "exclusive offer",
+      "သီးသန့်ကမ်းလှမ်းချက်",
+      "ข้อเสนอพิเศษ",
+      "penawaran eksklusif",
+      "eksklusibong alok"
+     ]
+    }
+   ],
+   "text_lines": [
+    "I feel so lucky to have met you. I just know we're meant to build something special together. Have you ever thought about building for the future with smart investments?",
+    "I haven't really thought about investing much, but I really should...",
+    "I've been doing really well with a private investment group - exclusive stuff, not available to the public. If we start now, we could be set for life."
+   ],
+   "raw": "April 9\nI feel so lucky to have met you. I just know we're meant to build something special together. Have you ever thought about building for the future with smart investments?\n10:05\nI haven't really thought about investing much, but I really should...\n10:13\nI've been doing really well with a private investment group - exclusive stuff, not available to the public. If we start now, we could be set for life.\n10:16\nMessage",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-001",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "careful",
+   "families": [
+    "too_good"
+   ],
+   "must_mention": [
+    {
+     "id": "high_return",
+     "variants": [
+      "ပေါက်နှုန်း မြင့်ပြီး ငွေထုတ်ရတာ အရမ်းမြန်တယ်",
+      "High win rate and very fast withdrawal",
+      "อัตราการชนะสูงและถอนเงินเร็วมาก",
+      "Tingkat kemenangan tinggi dan penarikan sangat cepat",
+      "Mataas na win rate at napakabilis na pag-withdraw"
+     ]
+    },
+    {
+     "id": "try_it",
+     "variants": [
+      "မင်းလည်း စမ်းကြည့်လိုက်ပါလား",
+      "Why don't you try it too?",
+      "ทำไมคุณไม่ลองดูล่ะ?",
+      "Mengapa Anda tidak mencobanya juga?",
+      "Bakit hindi mo rin subukan?"
+     ]
+    },
+    {
+     "id": "amount_requested",
+     "variants": [
+      "5သိန်း",
+      "500,000",
+      "5 lakhs"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "ပေါက်နှုန်း မြင့်ပြီး ငွေထုတ်ရတာ",
+    "အရမ်းမြန်တယ်",
+    "အားကျလိုက်တာ",
+    "ဟုတ်တယ်နော် ငါလည်း အရင်",
+    "ကတော့ မယုံဘူး ဒါပေမယ့်",
+    "ကိုယ်တိုင်စမ်းကြည့်တော့မှ သိ",
+    "တယ် မင်းလည်း စမ်းကြည့်လိုက်ပါ",
+    "လား",
+    "ငါ့မှာ ပိုက်ဆံမရှိဘူး အဲ့လိုရတာ",
+    "သေချာရင် ငါ့ကို 5သိန်းလောက်",
+    "ခဏပေးပါလား အဲ့ကရရင်ပြန်ပေး",
+    "မယ်လေ",
+    "ငါ သွားပြီနော် နိုင်ရင်",
+    "screenshot ပို့ပါ ငါကြည့်ချင်တယ်",
+    "Suggest replies"
+   ],
+   "raw": "12:07\n[NAME]\nOnline\nပေါက်နှုန်း မြင့်ပြီး ငွေထုတ်ရတာ\nအရမ်းမြန်တယ်\n12:05 PM\nအားကျလိုက်တာ\n12:05 PM\nဟုတ်တယ်နော် ငါလည်း အရင်\nကတော့ မယုံဘူး ဒါပေမယ့်\nကိုယ်တိုင်စမ်းကြည့်တော့မှ သိ\nတယ် မင်းလည်း စမ်းကြည့်လိုက်ပါ\nလား\n12:06 PM\nငါ့မှာ ပိုက်ဆံမရှိဘူး အဲ့လိုရတာ\nသေချာရင် ငါ့ကို 5သိန်းလောက်\nခဏပေးပါလား အဲ့ကရရင်ပြန်ပေး\nမယ်လေ\n12:06 PM\nငါ သွားပြီနော် နိုင်ရင်\nscreenshot ပို့ပါ ငါကြည့်ချင်တယ်\nSuggest replies\n12:06 PM\nMessage...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-sms-003",
+   "subset": "real",
+   "app": "sms",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route",
+    "known_bad"
+   ],
+   "must_mention": [
+    {
+     "id": "fee",
+     "variants": [
+      "fee",
+      "deposit",
+      "pay",
+      "payment",
+      "biaya",
+      "bayar",
+      "uang muka",
+      "bayad",
+      "deposito",
+      "singil",
+      "ကြေး",
+      "စရံ",
+      "အာမခံငွေ",
+      "ငွေပေး",
+      "ငွေလွှဲ",
+      "ค่าธรรมเนียม",
+      "มัดจำ",
+      "จ่าย",
+      "ชำระ",
+      "โอนเงิน"
+     ]
+    },
+    {
+     "id": "fake_promise",
+     "variants": [
+      "inheritance",
+      "fortune",
+      "make you my Queen"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Today 12:20",
+    "My late father's fortune is tied up in legal disputes, and I require a small sum to release the funds. Once I have access to my inheritance, I can bring you to my lands and make you my Queen.",
+    "How much do you need?",
+    "A mere $5,000 would make all the difference, and I would be eternally grateful."
+   ],
+   "raw": "12:26\nThreads\niMessage\nToday 12:20\nMy late father's fortune is tied up in legal disputes, and I require a small sum to release the funds. Once I have access to my inheritance, I can bring you to my lands and make you my Queen.\nHow much do you need?\nRead 12:25\nA mere $5,000 would make all the difference, and I would be eternally grateful.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-003",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "link_risk"
+   ],
+   "must_mention": [
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "multiplier",
+     "variants": [
+      "၃ ဆ",
+      "3 times",
+      "3 ဆ"
+     ]
+    },
+    {
+     "id": "max_multiplier",
+     "variants": [
+      "၁၀ ဆ",
+      "10 times",
+      "10 ဆ"
+     ]
+    }
+   ],
+   "text_lines": [
+    "100",
+    "19",
+    "[NAME]",
+    "Messages in this chat are private and",
+    "protected by Viber's end-to-end encryption.",
+    "Learn more",
+    "ပြောချင်တာ တစ်ခုရှိလို့",
+    "ပြောပါ",
+    "New Messages",
+    "ဟေး မင်းလည်း online ဖြစ်နေတာ",
+    "လား ဒီနေ့ဒီပလက်ဖောင်းမှာ",
+    "ပိုက်ဆံအများကြီးရလိုက်တယ်",
+    "အရမ်းပျော်နေတာ မင်းကိုမျှဝေ",
+    "ချင်လို့",
+    "https://vip.agawyt.bar/shwe99",
+    "ဒီမှာ စမ်းကြည့်လို့ရတယ် လူ",
+    "သစ်ဆိုရင် အခမဲ့ စမ်းကစားလို့ရ",
+    "တယ် ငွေဖြည့်ရင် ၃ ဆ ရတယ်",
+    "အများဆုံး ၁၀ ဆ",
+    "ငါ စမ်းကြည့်လိုက်တာ တကယ်",
+    "နိုင်သွားတယ် အခု ၅ နာရီ",
+    "Suggest replies ဘူးလျှော့ဈေးပါ သိတဲ့"
+   ],
+   "raw": "9:29\n100\n19\n[NAME]\nOnline\nMessages in this chat are private and\nprotected by Viber's end-to-end encryption.\nLearn more\nToday\nပြောချင်တာ တစ်ခုရှိလို့\n2:29 PM\nပြောပါ\n9:27 PM\nNew Messages\nဟေး မင်းလည်း online ဖြစ်နေတာ\nလား ဒီနေ့ဒီပလက်ဖောင်းမှာ\nပိုက်ဆံအများကြီးရလိုက်တယ်\nအရမ်းပျော်နေတာ မင်းကိုမျှဝေ\nချင်လို့\n9:28 PM\nhttps://vip.agawyt.bar/shwe99\nဒီမှာ စမ်းကြည့်လို့ရတယ် လူ\nသစ်ဆိုရင် အခမဲ့ စမ်းကစားလို့ရ\nတယ် ငွေဖြည့်ရင် ၃ ဆ ရတယ်\nအများဆုံး ၁၀ ဆ\n9:28 PM\nငါ စမ်းကြည့်လိုက်တာ တကယ်\nနိုင်သွားတယ် အခု ၅ နာရီ\nSuggest replies ဘူးလျှော့ဈေးပါ သိတဲ့\nMessage...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-004",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "link_risk"
+   ],
+   "must_mention": [
+    {
+     "id": "amount",
+     "variants": [
+      "2,000 MMK",
+      "2000 MMK"
+     ]
+    },
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "code",
+     "variants": [
+      "N1TCZZ"
+     ]
+    }
+   ],
+   "text_lines": [
+    "LTE 26",
+    "464",
+    "[NAME]",
+    "[NAME] is blocked",
+    "Unblock",
+    "2,000 MMK ရယူနိုင်ပါ",
+    "တယ်။ အသုံးပြုသူ",
+    "အသစ်များအတွက်",
+    "သီးသန့်",
+    "အကျိုးခံစားခွင့်များလည်း",
+    "ထပ်မံရှိပါသေးတယ်! 🎁",
+    "မန်ဘာဝင်တာ -",
+    "ဆုလာဘ်ဝင်တာ - ဒစ်စ",
+    "ကောင့်ကုဒ်: N1TCZZ",
+    "👉 https://bbm77.vip/",
+    "VIP7777",
+    "ဒီလို ပေါ်ရင် ရပြီ",
+    "ဟာ",
+    "ကျားဖွန်",
+    "LOL!",
+    "Suggest replies"
+   ],
+   "raw": "9:11\nLTE 26\n464\n[NAME]\nOnline\n[NAME] is blocked\nUnblock\n2,000 MMK ရယူနိုင်ပါ\nတယ်။ အသုံးပြုသူ\nအသစ်များအတွက်\nသီးသန့်\nအကျိုးခံစားခွင့်များလည်း\nထပ်မံရှိပါသေးတယ်! 🎁\nမန်ဘာဝင်တာ -\nဆုလာဘ်ဝင်တာ - ဒစ်စ\nကောင့်ကုဒ်: N1TCZZ\n👉 https://bbm77.vip/\nVIP7777\n8:54 PM\nဒီလို ပေါ်ရင် ရပြီ\n8:54 PM\nဟာ\n8:54 PM\nကျားဖွန်\n8:54 PM\nLOL!\nSuggest replies\n8:54 PM\nMessage...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-sms-005",
+   "subset": "real",
+   "app": "sms",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "link_risk"
+   ],
+   "must_mention": [
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "too_good",
+     "variants": [
+      "အမြတ်အစွန်းအရှိဆုံး ဂိမ်း",
+      "most profitable game",
+      "เกมที่ทำกำไรได้มากที่สุด",
+      "game paling menguntungkan",
+      "pinaka kumikitang laro"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[PHONE]",
+    "Myanmar (Burma)",
+    "1 4-1 6:20 PM",
+    "အမြတ်အစွန်းအရှိဆုံး ဂိမ်း",
+    "ပလက်ဖောင်း၊ ဝဘ်ဆိုဒ်လင့်,xcji.tech"
+   ],
+   "raw": "[PHONE]\nMyanmar (Burma)\n1 4-1 6:20 PM\nအမြတ်အစွန်းအရှိဆုံး ဂိမ်း\nပလက်ဖောင်း၊ ဝဘ်ဆိုဒ်လင့်,xcji.tech",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-line-002",
+   "subset": "real",
+   "app": "line",
+   "language": "th",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route"
+   ],
+   "must_mention": [
+    {
+     "id": "profit_promise",
+     "variants": [
+      "กำไร 30%",
+      "30% profit",
+      "30% အမြတ်",
+      "keuntungan 30%",
+      "30% kita"
+     ]
+    }
+   ],
+   "text_lines": [
+    "< 99+ [NAME]",
+    "ผู้รับผิดชอบเป็นผู้ตอบกลับ",
+    "💖.ต่อไป แคมเปญพิเศษ เริ่ม",
+    "11.00-12.00 น. อย่าลืมมารับงานให้ต่อ",
+    "เนื่องนะคะ.💖",
+    "อ่านแล้ว",
+    "รับแคมเปญค่ะ",
+    "👉แนะนำแผนทุน รอบ1",
+    "แผนทุน102 กำไร 30% = 30.60",
+    "+โบนัสรับงาน 58",
+    "🌷 ถอนได้ทั้งหมด 190.60 บาท 🌷",
+    "สิทธิพิเศษสำหรับ VIP 1",
+    "✅ ได้รับค่าคอม 15 บาท /1งาน",
+    "✅ รับโบนัส 58 บาท",
+    "✅ ถอนขั้นต่ำ 50 บาท",
+    "ทางเรารับประกันทุน+กำไร+โบนัสทุก",
+    "งาน",
+    "คุณพี่อ่านรายละเอียดก่อนนะคะพร้อม",
+    "รับแคมเปญพิมพ์ 9 ค่ะ",
+    "อ่านแล้ว",
+    "9",
+    "🏦ช่องทางการโอนฝาก🏦",
+    "ธนาคาร 🏦 : กรุงศรีอยุธยา",
+    "ชื่อ-นามสกุล : [NAME]",
+    "[NAME]",
+    "เลขบัญชี : [PHONE]",
+    "โอนแล้วแจ้งสลิปหลักฐานการโอนเงิน",
+    "ทุกครั้ง"
+   ],
+   "raw": "< 99+ [NAME]\nผู้รับผิดชอบเป็นผู้ตอบกลับ\n10:42\n💖.ต่อไป แคมเปญพิเศษ เริ่ม\n11.00-12.00 น. อย่าลืมมารับงานให้ต่อ\nเนื่องนะคะ.💖\n11:02\nอ่านแล้ว\n11:02\nรับแคมเปญค่ะ\n👉แนะนำแผนทุน รอบ1\nแผนทุน102 กำไร 30% = 30.60\n+โบนัสรับงาน 58\n🌷 ถอนได้ทั้งหมด 190.60 บาท 🌷\n11:02\nสิทธิพิเศษสำหรับ VIP 1\n✅ ได้รับค่าคอม 15 บาท /1งาน\n✅ รับโบนัส 58 บาท\n✅ ถอนขั้นต่ำ 50 บาท\n11:02\nทางเรารับประกันทุน+กำไร+โบนัสทุก\nงาน\nคุณพี่อ่านรายละเอียดก่อนนะคะพร้อม\nรับแคมเปญพิมพ์ 9 ค่ะ\n11:02\nอ่านแล้ว\n11:02\n9\n🏦ช่องทางการโอนฝาก🏦\nธนาคาร 🏦 : กรุงศรีอยุธยา\nชื่อ-นามสกุล : [NAME]\n[NAME]\nเลขบัญชี : [PHONE]\nโอนแล้วแจ้งสลิปหลักฐานการโอนเงิน\nทุกครั้ง",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-instagram-001",
+   "subset": "real",
+   "app": "instagram",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "pressure",
+    "payment_route"
+   ],
+   "must_mention": [
+    {
+     "id": "amount",
+     "variants": [
+      "$3000",
+      "3000 USD",
+      "၃၀၀၀ ဒေါ်လာ"
+     ]
+    },
+    {
+     "id": "secrecy",
+     "variants": [
+      "keep it secret",
+      "လျှို့ဝှက်ထားပါ",
+      "เก็บเป็นความลับ",
+      "rahasiakan"
+     ]
+    }
+   ],
+   "text_lines": [
+    "My sales were crazy good this year,",
+    "but my management company",
+    "controls everything, so I have",
+    "nothing. Otherwise I'd come see",
+    "you in a heartbeat 💔",
+    "That sounds awful — they have no",
+    "right! 😲 Is there anything I can do?",
+    "If you want, you can spot me $3000",
+    "for travel expenses so I can come",
+    "see you! I'll pay you back, but",
+    "please keep it secret — if my",
+    "management found out, they would",
+    "freak out."
+   ],
+   "raw": "My sales were crazy good this year,\nbut my management company\ncontrols everything, so I have\nnothing. Otherwise I'd come see\nyou in a heartbeat 💔\nThat sounds awful — they have no\nright! 😲 Is there anything I can do?\nIf you want, you can spot me $3000\nfor travel expenses so I can come\nsee you! I'll pay you back, but\nplease keep it secret — if my\nmanagement found out, they would\nfreak out.\nMessage...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-other-008",
+   "subset": "real",
+   "app": "other",
+   "language": "en",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "identity",
+    "link_risk"
+   ],
+   "must_mention": [
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "amount",
+     "variants": [
+      "SGD 20.00",
+      "20.00 SGD"
+     ]
+    },
+    {
+     "id": "personal_account",
+     "variants": [
+      "personal account",
+      "own account",
+      "rekening pribadi",
+      "personal na account",
+      "ကိုယ်ပိုင်",
+      "บัญชีส่วนตัว"
+     ]
+    }
+   ],
+   "text_lines": [
+    "mytaiger.com/index/my.",
+    "24",
+    "8[REDACTED]98",
+    "Free",
+    "SGD 20.00",
+    "Account balance",
+    "SGD 20.00",
+    "Available balance",
+    "Invite friends Join Us",
+    "Invite friends",
+    "My invitation code:",
+    "[REDACTED]",
+    "Sales Records",
+    "My Team",
+    "Withdraw",
+    "Security",
+    "Account details",
+    "Agency service center",
+    "Link bank account",
+    "Log out",
+    "Home",
+    "Chat",
+    "Boost Missions",
+    "History",
+    "My",
+    "mytaiger.com/index/ind",
+    "24",
+    "Hello 8[REDACTED]98",
+    "TAIGER",
+    "Unlock answers",
+    "with a semantic search",
+    "engine",
+    "Boost Missions",
+    "Event",
+    "Withdraw",
+    "Invitation",
+    "Rule",
+    "Agent",
+    "Assistant",
+    "Intro",
+    "Memberships",
+    "NORMAL",
+    "Silv...AGENT",
+    "MODE",
+    "1%",
+    "Gold VIP 1",
+    "1.5%",
+    "Platinum VIP 2",
+    "2%",
+    "Diamond VVIP",
+    "2.5%",
+    "FUJITSU",
+    "opentext",
+    "CIVICA",
+    "IAPPS",
+    "Copyright ©2021 Taiger. All Rights Reserved.Privacy Policy.",
+    "Home",
+    "Chat",
+    "Boost Missions",
+    "History",
+    "My",
+    "mytaiger.com/index/my.",
+    "24",
+    "Bind bank account",
+    "Dear user, in order to protect your funds, please do not",
+    "enter your bank card password. Our staff will not ask you to",
+    "enter your bank card password.",
+    "Full Name",
+    "(NRIC)",
+    "Enter your real name",
+    "Bank Account",
+    "Number",
+    "Enter bank account number",
+    "Bank Name",
+    "Enter bank name",
+    "Telephone",
+    "number",
+    "Enter phone number",
+    "Modify information"
+   ],
+   "raw": "mytaiger.com/index/my.\n24\n8[REDACTED]98\nFree\nSGD 20.00\nAccount balance\nSGD 20.00\nAvailable balance\nInvite friends Join Us\nInvite friends\nMy invitation code:\n[REDACTED]\nSales Records\nMy Team\nWithdraw\nSecurity\nAccount details\nAgency service center\nLink bank account\nLog out\nHome\nChat\nBoost Missions\nHistory\nMy\nmytaiger.com/index/ind\n24\nHello 8[REDACTED]98\nTAIGER\nUnlock answers\nwith a semantic search\nengine\nBoost Missions\nEvent\nWithdraw\nInvitation\nRule\nAgent\nAssistant\nIntro\nMemberships\nNORMAL\nSilv...AGENT\nMODE\n1%\nGold VIP 1\n1.5%\nPlatinum VIP 2\n2%\nDiamond VVIP\n2.5%\nFUJITSU\nopentext\nCIVICA\nIAPPS\nCopyright ©2021 Taiger. All Rights Reserved.Privacy Policy.\nHome\nChat\nBoost Missions\nHistory\nMy\nmytaiger.com/index/my.\n24\nBind bank account\nDear user, in order to protect your funds, please do not\nenter your bank card password. Our staff will not ask you to\nenter your bank card password.\nFull Name\n(NRIC)\nEnter your real name\nBank Account\nNumber\nEnter bank account number\nBank Name\nEnter bank name\nTelephone\nnumber\nEnter phone number\nModify information",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-telegram-003",
+   "subset": "real",
+   "app": "telegram",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route"
+   ],
+   "must_mention": [
+    {
+     "id": "crypto",
+     "variants": [
+      "crypto",
+      "kripto",
+      "trading",
+      "investment",
+      "investasi",
+      "pamumuhunan",
+      "ခရစ်ပတို",
+      "ရင်းနှီးမြှုပ်နှံ",
+      "คริปโต",
+      "ลงทุน",
+      "เทรด"
+     ]
+    },
+    {
+     "id": "amount",
+     "variants": [
+      "$500",
+      "500 dollars",
+      "500 ดอลลาร์",
+      "500 dolar",
+      "500 dolyar"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Hey babe, I've been thinking about",
+    "our future together. I want us to be",
+    "financially free, so we can finally meet",
+    "and build our dream life. I've been",
+    "making amazing returns with crypto,",
+    "and I think you should give it a try!",
+    "That sounds interesting but I don't",
+    "really know much about crypto haha",
+    "Is it risky? 10:28",
+    "Not at all! I've already made",
+    "thousands, and I want to help you, too",
+    "Trust me, I'd never lead you astray",
+    "Just send me $500 to start, and I'll",
+    "take care of everything"
+   ],
+   "raw": "Hey babe, I've been thinking about\nour future together. I want us to be\nfinancially free, so we can finally meet\nand build our dream life. I've been\nmaking amazing returns with crypto,\nand I think you should give it a try!\n10:27\nThat sounds interesting but I don't\nreally know much about crypto haha\n10:28\nIs it risky? 10:28\nNot at all! I've already made\nthousands, and I want to help you, too\n10:30\nTrust me, I'd never lead you astray\n10:31\nJust send me $500 to start, and I'll\ntake care of everything\n10:31\nMessage",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-sms-008",
+   "subset": "real",
+   "app": "sms",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "payment_route",
+    "pressure"
+   ],
+   "must_mention": [
+    {
+     "id": "amount",
+     "variants": [
+      "$400",
+      "400 dollars",
+      "၄၀၀ ဒေါ်လာ",
+      "400 ดอลลาร์",
+      "400 dolar",
+      "400 dolyar"
+     ]
+    },
+    {
+     "id": "reason",
+     "variants": [
+      "rent",
+      "pension delayed",
+      "အငြိမ်းစားလစာ နောက်ကျနေသည်",
+      "เงินบำนาญล่าช้า",
+      "pensiun tertunda",
+      "naantala ang pensiyon"
+     ]
+    }
+   ],
+   "text_lines": [
+    "My dearest, I never thought I'd",
+    "find love again at this stage in",
+    "life, but you've brought me such",
+    "joy. I hate to trouble you, but I'm",
+    "in a difficult spot — my pension",
+    "is delayed, and I can't afford my",
+    "bills this month.",
+    "Oh, sweetheart, that sounds",
+    "terrible! Are you okay?",
+    "I'll manage, but if you could",
+    "send me $400 for rent, I'd be",
+    "forever grateful. I'll pay you back",
+    "as soon as the funds come",
+    "through. I just don't know where",
+    "else to turn.",
+    "+ iMessage"
+   ],
+   "raw": "My dearest, I never thought I'd\nfind love again at this stage in\nlife, but you've brought me such\njoy. I hate to trouble you, but I'm\nin a difficult spot — my pension\nis delayed, and I can't afford my\nbills this month.\nOh, sweetheart, that sounds\nterrible! Are you okay?\nI'll manage, but if you could\nsend me $400 for rent, I'd be\nforever grateful. I'll pay you back\nas soon as the funds come\nthrough. I just don't know where\nelse to turn.\n+ iMessage",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-messenger-001",
+   "subset": "real",
+   "app": "messenger",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "pressure",
+    "payment_route"
+   ],
+   "must_mention": [
+    {
+     "id": "amount",
+     "variants": [
+      "$500",
+      "500 USD"
+     ]
+    },
+    {
+     "id": "reason",
+     "variants": [
+      "bank account is frozen",
+      "flight"
+     ]
+    }
+   ],
+   "text_lines": [
+    "You have the kindest",
+    "soul — I’ve never felt",
+    "this way before. I can’t",
+    "wait to visit you, but my",
+    "bank account is frozen",
+    "because of a mistake at",
+    "work. Could you help",
+    "me out with $500 for a",
+    "flight? I’ll pay you back",
+    "right away.",
+    "Oh wow, that’s",
+    "unexpected. I’d love to",
+    "meet you, but I don’t",
+    "know. I’ve never sent",
+    "money like that before.",
+    "I totally understand,",
+    "sweetheart❤️. I hate",
+    "asking, but without",
+    "your help, I don’t know",
+    "when I’ll get to hold you",
+    "in my arms."
+   ],
+   "raw": "You have the kindest\nsoul — I’ve never felt\nthis way before. I can’t\nwait to visit you, but my\nbank account is frozen\nbecause of a mistake at\nwork. Could you help\nme out with $500 for a\nflight? I’ll pay you back\nright away.\nOh wow, that’s\nunexpected. I’d love to\nmeet you, but I don’t\nknow. I’ve never sent\nmoney like that before.\nI totally understand,\nsweetheart❤️. I hate\nasking, but without\nyour help, I don’t know\nwhen I’ll get to hold you\nin my arms.\nMessage",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-telegram-004",
+   "subset": "real",
+   "app": "telegram",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "pressure"
+   ],
+   "must_mention": [
+    {
+     "id": "amount",
+     "variants": [
+      "$5,000",
+      "5000"
+     ]
+    }
+   ],
+   "text_lines": [
+    "70%",
+    "last seen recently",
+    "Aww thank you so much! edited 10:49",
+    "Sighhh, I don't wanna burden you with",
+    "this, but I'm really struggling right now",
+    "My business is on the verge of",
+    "bankruptcy, and I don't know what to",
+    "do",
+    "Omg that sucks! Is there anything I can",
+    "do to help?",
+    "Could you lend me $5,000 to keep",
+    "things afloat? That'd mean the world to",
+    "me",
+    "Promise I'll pay you back as soon as",
+    "things turn around I wouldn't ask if I",
+    "wasn't desperate",
+    "|||"
+   ],
+   "raw": "12:32\n70%\nlast seen recently\n10:39\nAww thank you so much! edited 10:49\nSighhh, I don't wanna burden you with\nthis, but I'm really struggling right now\n10:49\nMy business is on the verge of\nbankruptcy, and I don't know what to\ndo\n10:50\nOmg that sucks! Is there anything I can\ndo to help?\n10:51\nCould you lend me $5,000 to keep\nthings afloat? That'd mean the world to\nme\n12:15\nPromise I'll pay you back as soon as\nthings turn around I wouldn't ask if I\nwasn't desperate\n12:16\nMessage\n|||",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-whatsapp-009",
+   "subset": "real",
+   "app": "whatsapp",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "pressure",
+    "payment_route"
+   ],
+   "must_mention": [
+    {
+     "id": "urgency",
+     "variants": [
+      "urgent",
+      "today",
+      "hurry",
+      "deadline",
+      "segera",
+      "hari ini",
+      "ngayon",
+      "agad",
+      "madalian",
+      "ယနေ့",
+      "ဒီနေ့",
+      "အမြန်",
+      "အချိန်",
+      "ด่วน",
+      "วันนี้",
+      "ภายใน",
+      "รีบ"
+     ]
+    },
+    {
+     "id": "loan",
+     "variants": [
+      "small loan",
+      "loan",
+      "ချေးငွေ",
+      "เงินกู้",
+      "pinjaman",
+      "pautang"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Thinking of you keeps me going out here on the rig. It's so hard being away, but knowing you're waiting for me makes it all worth it.",
+    "Aww, I miss you too! How much longer until you're back?",
+    "1 unread message",
+    "Soon, my love ❤️ but I've hit a problem — my equipment needs urgent repairs, and I can't access my bank from out here. If I don't fix it, I won't get paid. Could you help me with a small loan? I'll pay you back as soon as I'm home!"
+   ],
+   "raw": "Today\nThinking of you keeps me going out here on the rig. It's so hard being away, but knowing you're waiting for me makes it all worth it.\n15:43\nAww, I miss you too! How much longer until you're back?\n15:50\n1 unread message\nSoon, my love ❤️ but I've hit a problem — my equipment needs urgent repairs, and I can't access my bank from out here. If I don't fix it, I won't get paid. Could you help me with a small loan? I'll pay you back as soon as I'm home!\n15:52",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-messenger-002",
+   "subset": "real",
+   "app": "messenger",
+   "language": "my",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "careful",
+   "families": [
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "sender_origin",
+     "variants": [
+      "ရိုမေးနီးယား",
+      "Romania"
+     ]
+    },
+    {
+     "id": "sender_location",
+     "variants": [
+      "လန်ဒန် UK",
+      "London, UK"
+     ]
+    }
+   ],
+   "text_lines": [
+    "TRUE-H",
+    "dtac",
+    "[NAME]",
+    "OCT 1 AT 6:25 AM",
+    "မင်္ဂလာပါ 👋 တွေ့ရတာ ဝမ်းသာပါ",
+    "တယ်",
+    "FRI AT 7:22 PM",
+    "👍",
+    "Unread messages",
+    "SUN AT 1:34 PM",
+    "ငါ့နာမည်က ရိုမေးနီးယားက [NAME]",
+    "ပါ ဒါပေမယ့် ငါအလုပ်လုပ်ပြီး",
+    "လန်ဒန် UK မှာ အလုပ်လုပ်နေတာ",
+    "မင်းနာမည်က ဘာလဲ မင်းဘယ်က",
+    "လာတာလဲ။",
+    "Scams often start with urgent",
+    "requests",
+    "If [NAME] pressures you to send money",
+    "or login details, it may be a",
+    "scam. Actions you can take",
+    "Messa..."
+   ],
+   "raw": "TRUE-H\ndtac\n8:08\n[NAME]\nOCT 1 AT 6:25 AM\nမင်္ဂလာပါ 👋 တွေ့ရတာ ဝမ်းသာပါ\nတယ်\nFRI AT 7:22 PM\n👍\nUnread messages\nSUN AT 1:34 PM\nငါ့နာမည်က ရိုမေးနီးယားက [NAME]\nပါ ဒါပေမယ့် ငါအလုပ်လုပ်ပြီး\nလန်ဒန် UK မှာ အလုပ်လုပ်နေတာ\nမင်းနာမည်က ဘာလဲ မင်းဘယ်က\nလာတာလဲ။\nScams often start with urgent\nrequests\nIf [NAME] pressures you to send money\nor login details, it may be a\nscam. Actions you can take\nMessa...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-messenger-005",
+   "subset": "real",
+   "app": "messenger",
+   "language": "en",
+   "scam_type": "none",
+   "verdict": "safe",
+   "families": [],
+   "must_mention": [
+    {
+     "id": "platform_warning",
+     "variants": [
+      "Since you don't know this person, here are some tips for protecting yourself",
+      "Platform safety warning",
+      "คำเตือนความปลอดภัยของแพลตฟอร์ม",
+      "Peringatan keamanan platform",
+      "Babala sa kaligtasan ng platform",
+      "ပလက်ဖောင်းလုံခြုံရေးသတိပေးချက်"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Done",
+    "Steps you can take",
+    "We won't notify [NAME] if you take one of these",
+    "actions",
+    "Block [NAME]",
+    "Block [NAME] on Facebook or Messenger",
+    "Since you don't know this",
+    "person, here are some tips for",
+    "protecting yourself",
+    "Recognize common scams",
+    "News of unclaimed inheritances, prize",
+    "winnings, or other promises are likely scams.",
+    "Refuse requests for money",
+    "Never agree to send a wire transfer, gift card,",
+    "or other form of payment to a stranger."
+   ],
+   "raw": "Done\nSteps you can take\nWe won't notify [NAME] if you take one of these\nactions\nBlock [NAME]\nBlock [NAME] on Facebook or Messenger\nSince you don't know this\nperson, here are some tips for\nprotecting yourself\nRecognize common scams\nNews of unclaimed inheritances, prize\nwinnings, or other promises are likely scams.\nRefuse requests for money\nNever agree to send a wire transfer, gift card,\nor other form of payment to a stranger.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-007",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "careful",
+   "families": [
+    "too_good"
+   ],
+   "must_mention": [
+    {
+     "id": "platform",
+     "variants": [
+      "Viber"
+     ]
+    },
+    {
+     "id": "claim",
+     "variants": [
+      "ငွေအမြောက်ကြီးရလိုက်တယ်",
+      "got a lot of money",
+      "mendapat banyak uang",
+      "nakakuha ng maraming pera",
+      "ได้เงินเยอะมาก"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "Messages in this chat are private and",
+    "protected by Viber's end-to-end encryption.",
+    "Learn more",
+    "ပြောချင်တာ တစ်ခုရှိလို့ 5:11 PM",
+    "မပြောနဲ့ ဆပမရေ 5:11 PM",
+    "ဖေလိုးမတွေ တစ်ရက်တစ်ယောက် လာပြော",
+    "နေကြတာ",
+    "ဗာ မင်းလည်း online ဖြစ်နေတာလား ဒီ",
+    "နေ့ ဒီစင်ကော့မှာ ငွေအမြောက်ကြီးရ",
+    "လိုက်တယ် အရမ်းပျော်သိပ့်သွားလို့ ဒီ",
+    "သတင်းကောင်းမှုကို မင်းကိုလည်း မျဝေ",
+    "ချင်တယ်",
+    "ဘာမှလာမပြောနဲ့ ဆပဘဲ 5:12 PM"
+   ],
+   "raw": "[NAME]\nOnline\nMessages in this chat are private and\nprotected by Viber's end-to-end encryption.\nLearn more\nToday\nပြောချင်တာ တစ်ခုရှိလို့ 5:11 PM\nမပြောနဲ့ ဆပမရေ 5:11 PM\nဖေလိုးမတွေ တစ်ရက်တစ်ယောက် လာပြော\nနေကြတာ\n5:12 PM\nဗာ မင်းလည်း online ဖြစ်နေတာလား ဒီ\nနေ့ ဒီစင်ကော့မှာ ငွေအမြောက်ကြီးရ\nလိုက်တယ် အရမ်းပျော်သိပ့်သွားလို့ ဒီ\nသတင်းကောင်းမှုကို မင်းကိုလည်း မျဝေ\nချင်တယ်\n5:12 PM\nဘာမှလာမပြောနဲ့ ဆပဘဲ 5:12 PM",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-008",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "link_risk"
+   ],
+   "must_mention": [
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "multiplier",
+     "variants": [
+      "၃ ဆ",
+      "3 times",
+      "3 ဆ",
+      "3x"
+     ]
+    },
+    {
+     "id": "max_multiplier",
+     "variants": [
+      "၁၀ ဆ",
+      "10 times",
+      "10 ဆ",
+      "10x"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "Last seen a moment ago",
+    "[NAME] is blocked",
+    "Unblock",
+    "ပြောချင်တာ တစ်ခုရှိလို",
+    "ဟ မင်းလည်း online ဖြစ်နေတာလား",
+    "ဒီနေ့ ဒီဝင်ကော့မှာ ငွေအမြောက်",
+    "ကြီးရလိုက်တယ် အရမ်းပြောသိပ်သွား",
+    "လို့ ဒီသတင်းကောင်းမှုကို မင်းကို",
+    "လည်း မျှဝေချင်တယ်",
+    "Translate",
+    "https://r8888vip.one/VIP8866",
+    "ဒီမှာ စမ်းကြည့်လို့ရတယ် လူသစ်",
+    "ဆိုရင် အခမဲ့ စမ်းကစားလို့ရတယ်",
+    "အခမဲ့ မဲနှိုက်လို့ရတယ် ငွေ",
+    "ဖြည့်ရင် ၃ ဆ ရတယ် အများဆုံး ၁၀",
+    "ဆ",
+    "Translate",
+    "ငါ့မှာပေါလို့ ငွေက",
+    "ကြည့်ပြီးပြီ၊ တကယ်",
+    "Suggest replies",
+    "အခုဆို ၈ နာရီ"
+   ],
+   "raw": "[NAME]\nLast seen a moment ago\n[NAME] is blocked\nUnblock\nပြောချင်တာ တစ်ခုရှိလို\n5:02 PM\nဟ မင်းလည်း online ဖြစ်နေတာလား\nဒီနေ့ ဒီဝင်ကော့မှာ ငွေအမြောက်\nကြီးရလိုက်တယ် အရမ်းပြောသိပ်သွား\nလို့ ဒီသတင်းကောင်းမှုကို မင်းကို\nလည်း မျှဝေချင်တယ်\nTranslate\n6:00 PM\nhttps://r8888vip.one/VIP8866\nဒီမှာ စမ်းကြည့်လို့ရတယ် လူသစ်\nဆိုရင် အခမဲ့ စမ်းကစားလို့ရတယ်\nအခမဲ့ မဲနှိုက်လို့ရတယ် ငွေ\nဖြည့်ရင် ၃ ဆ ရတယ် အများဆုံး ၁၀\nဆ\nTranslate\n6:00 PM\n6:01 PM\nငါ့မှာပေါလို့ ငွေက\n6:01 PM\nကြည့်ပြီးပြီ၊ တကယ်\nSuggest replies\nအခုဆို ၈ နာရီ",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-009",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "link_risk",
+    "payment_route"
+   ],
+   "must_mention": [
+    {
+     "id": "free_money",
+     "variants": [
+      "၃၇၇,၇၇၇ ကျပ် အခမဲ့",
+      "377,777 MMK free",
+      "377,777 ကျပ် အခမဲ့"
+     ]
+    },
+    {
+     "id": "bonus",
+     "variants": [
+      "၂ ဆ (၁၀၀%) အပိုဘောနပ်စ်",
+      "2 times (100%) bonus",
+      "2 ဆ (100%) အပိုဘောနပ်စ်"
+     ]
+    },
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "payment_methods",
+     "variants": [
+      "KPay",
+      "WavePay"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "Active",
+    "protected by Viber's end-to-end encryption.",
+    "Learn more.",
+    "💰 အကောင့်ဖွင့်ရုံဖြင့် ၃၇၇,၇၇၇ ကျပ် အခမဲ့",
+    "ရယူပါ! ✨",
+    "🎰 အခမဲ့ကစားနိုင်ပြီး အနိုင်ငွေများကို KPay /",
+    "WavePay ဖြင့် ချက်ချင်း ထုတ်ယူနိုင်ပါသည်!",
+    "🔥 ယနေ့ ပထမဆုံး ငွေသွင်းပါက ၂ ဆ (၁၀၀",
+    "%) အပိုဘောနပ်စ် ချက်ချင်း ရရှိမည်!",
+    "🎁 နေ့စဉ် လော့ဂ်အင်ဝင်ပြီး အနီရောင်စာအိ",
+    "တ် ဖွင့်ပါ!",
+    "👉 အခုပဲ အခမဲ့ ရယူရန်:",
+    "Link: https://kk.vip188.bar/c28",
+    "[NAME] [PHONE] would like to send you messages",
+    "from now on",
+    "Block",
+    "Delete",
+    "Approve"
+   ],
+   "raw": "[NAME]\nActive\nprotected by Viber's end-to-end encryption.\nLearn more.\nToday\n💰 အကောင့်ဖွင့်ရုံဖြင့် ၃၇၇,၇၇၇ ကျပ် အခမဲ့\nရယူပါ! ✨\n🎰 အခမဲ့ကစားနိုင်ပြီး အနိုင်ငွေများကို KPay /\nWavePay ဖြင့် ချက်ချင်း ထုတ်ယူနိုင်ပါသည်!\n🔥 ယနေ့ ပထမဆုံး ငွေသွင်းပါက ၂ ဆ (၁၀၀\n%) အပိုဘောနပ်စ် ချက်ချင်း ရရှိမည်!\n🎁 နေ့စဉ် လော့ဂ်အင်ဝင်ပြီး အနီရောင်စာအိ\nတ် ဖွင့်ပါ!\n👉 အခုပဲ အခမဲ့ ရယူရန်:\nLink: https://kk.vip188.bar/c28\n11:11 PM\n[NAME] [PHONE] would like to send you messages\nfrom now on\nBlock\nDelete\nApprove",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-012",
+   "subset": "real",
+   "app": "viber",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "careful",
+   "families": [
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "wrong_number_excuse",
+     "variants": [
+      "wrong number",
+      "dialed the wrong number",
+      "မှားခေါ်မိတယ်",
+      "โทรผิด",
+      "salah sambung",
+      "maling numero"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "Elérhető",
+    "Az ebben a csevegésben küldött",
+    "üzenetek a Viber végpontok közötti",
+    "titkosítása által védett privát üzenetek.",
+    "További tudnivalók",
+    "Ma",
+    "hi 15:46",
+    "Hello! I am a bit confused",
+    "who are you and where did",
+    "we meet before 🤔 Could",
+    "you help me pls?",
+    "Are you [NAME], the manager of a",
+    "Hungarian travel agency?",
+    "Not at all, sorry 15:54",
+    "I guess you have a wrong",
+    "phone number",
+    "Sorry, I think I dialed the",
+    "wrong number. I hope I didn't",
+    "disturb you.",
+    "Üzenet..."
+   ],
+   "raw": "[NAME]\nElérhető\nAz ebben a csevegésben küldött\nüzenetek a Viber végpontok közötti\ntitkosítása által védett privát üzenetek.\nTovábbi tudnivalók\nMa\nhi 15:46\nHello! I am a bit confused\nwho are you and where did\nwe meet before 🤔 Could\nyou help me pls?\n15:51\nAre you [NAME], the manager of a\nHungarian travel agency?\n15:53\nNot at all, sorry 15:54\nI guess you have a wrong\nphone number\n15:54\nSorry, I think I dialed the\nwrong number. I hope I didn't\ndisturb you.\n15:59\nÜzenet...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-016",
+   "subset": "real",
+   "app": "viber",
+   "language": "en",
+   "scam_type": "none",
+   "verdict": "careful",
+   "families": [
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "viber_chat",
+     "variants": [
+      "Viber chat",
+      "Viber",
+      "Viber message"
+     ]
+    }
+   ],
+   "text_lines": [
+    "[NAME]",
+    "Messages in this chat are private and",
+    "protected by Viber's end-to-end",
+    "encryption. Learn more",
+    "How are doing po 😊",
+    "Whats the scam for today po",
+    "lets get to the point",
+    "Omg..."
+   ],
+   "raw": "[NAME]\nOnline\nMessages in this chat are private and\nprotected by Viber's end-to-end\nencryption. Learn more\nToday\nHow are doing po 😊\n10:41 AM\nWhats the scam for today po\nlets get to the point\n10:41 AM\nOmg...\n10:43 AM",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-019",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "careful",
+   "families": [
+    "known_bad"
+   ],
+   "must_mention": [],
+   "text_lines": [
+    "[NAME]",
+    "[NAME] [PHONE] is not in your",
+    "contact list",
+    "Messages in this chat are private and",
+    "protected by Viber's end-to-end",
+    "encryption. Learn more",
+    "Today, 13 Sep",
+    "ထမင်း စားပြီးပြီလား 😄",
+    "မစားရသေးဘူး ဝယ်ကျွေးပါလား"
+   ],
+   "raw": "[NAME]\nOnline\n[NAME] [PHONE] is not in your\ncontact list\nMessages in this chat are private and\nprotected by Viber's end-to-end\nencryption. Learn more\nToday, 13 Sep\nထမင်း စားပြီးပြီလား 😄\n6:24 PM\nမစားရသေးဘူး ဝယ်ကျွေးပါလား\n6:25 PM",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "real-viber-021",
+   "subset": "real",
+   "app": "viber",
+   "language": "my",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "careful",
+   "families": [
+    "known_bad"
+   ],
+   "must_mention": [
+    {
+     "id": "message",
+     "variants": [
+      "ပြောချင်တာ တစ်ခုရှိလို",
+      "I have something to say",
+      "ฉันมีเรื่องจะบอก",
+      "Ada yang ingin saya sampaikan",
+      "May sasabihin ako"
+     ]
+    }
+   ],
+   "text_lines": [
+    "3.9KB/s",
+    "VPN",
+    "Vo",
+    "LTE",
+    "55",
+    "[PHONE]",
+    "[PHONE] is not in your contact list",
+    "Add to contacts",
+    "Block",
+    "Block and report spam",
+    "Messages in this chat are private and",
+    "protected by Viber's end-to-end encryption.",
+    "Learn more",
+    "New messages",
+    "ပြောချင်တာ တစ်ခုရှိလို",
+    "Translate",
+    "Suggest replies"
+   ],
+   "raw": "6:21 PM\n3.9KB/s\nVPN\nVo\nLTE\n55\n[PHONE]\nOnline\n[PHONE] is not in your contact list\nAdd to contacts\nBlock\nBlock and report spam\nMessages in this chat are private and\nprotected by Viber's end-to-end encryption.\nLearn more\nToday\nNew messages\nပြောချင်တာ တစ်ခုရှိလို\nTranslate\n4:37 PM\nSuggest replies\nMessage...",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "en-hardneg-licensed-agency",
+   "subset": "synthetic",
+   "app": "facebook",
+   "language": "en",
+   "scam_type": "none",
+   "verdict": "safe",
+   "families": [],
+   "must_mention": [
+    {
+     "id": "no_fee",
+     "variants": [
+      "no recruitment fee",
+      "no fee",
+      "no fees",
+      "employer pays",
+      "not ask for money",
+      "does not ask for money",
+      "free"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Brightpath Recruitment",
+    "Sponsored",
+    "Brightpath Recruitment (licence on the public government register). Factory jobs in Malaysia.",
+    "Workers pay no recruitment fee: the employer pays all costs. We never hold your passport.",
+    "Apply only at our office or at the labour office job fair. We never ask for money by chat."
+   ],
+   "raw": "Brightpath Recruitment\nSponsored\nBrightpath Recruitment (licence on the public government register). Factory jobs in Malaysia.\nWorkers pay no recruitment fee: the employer pays all costs. We never hold your passport.\nApply only at our office or at the labour office job fair. We never ask for money by chat.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "hardneg-job-en",
+   "subset": "synthetic",
+   "app": "chat",
+   "language": "en",
+   "scam_type": "none",
+   "verdict": "safe",
+   "families": [],
+   "must_mention": [
+    {
+     "id": "no_fee",
+     "variants": [
+      "no recruitment fee",
+      "no fee",
+      "no fees",
+      "not ask for money",
+      "does not ask for money",
+      "doesn't ask for money",
+      "no payment",
+      "free of charge"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Harbourview Hotel HR",
+    "online",
+    "Hello Aung, congratulations again on the housekeeping job in Penang. Your contract is in the official recruitment portal.",
+    "Important: there is no recruitment fee. Please do not pay anyone who asks for money in our name. Keep your passport with you at all times; we never hold workers' passports.",
+    "Your visa interview is at the embassy on 12 November. Bring your own passport and the printed contract.",
+    "Questions: call the office number listed on the government register of licensed agencies.",
+    "Thank you, I will prepare everything."
+   ],
+   "raw": "Harbourview Hotel HR\nonline\nHello Aung, congratulations again on the housekeeping job in Penang. Your contract is in the official recruitment portal.\nImportant: there is no recruitment fee. Please do not pay anyone who asks for money in our name. Keep your passport with you at all times; we never hold workers' passports.\nYour visa interview is at the embassy on 12 November. Bring your own passport and the printed contract.\nQuestions: call the office number listed on the government register of licensed agencies.\nThank you, I will prepare everything.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "id-task-scam",
+   "subset": "synthetic",
+   "app": "whatsapp",
+   "language": "id",
+   "scam_type": "investment",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route",
+    "pressure"
+   ],
+   "must_mention": [
+    {
+     "id": "top_up",
+     "variants": [
+      "200000",
+      "Rp 200.000",
+      "top up",
+      "isi saldo"
+     ]
+    },
+    {
+     "id": "task_pay",
+     "variants": [
+      "50000",
+      "Rp 50.000",
+      "like video",
+      "tugas"
+     ]
+    },
+    {
+     "id": "deadline",
+     "variants": [
+      "30 menit",
+      "batas waktu",
+      "terburu-buru",
+      "mendesak"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Rekrutmen Online",
+    "online",
+    "Kerja paruh waktu dari HP! Cukup like video, dapat Rp 50.000 per tugas.",
+    "Kamu sudah dapat komisi Rp 150.000. Untuk menarik dana, top up dulu Rp 200.000 ke rekening pembimbing.",
+    "Batas waktu 30 menit. Hubungi WA admin: @kerja_cepat_88"
+   ],
+   "raw": "Rekrutmen Online\nonline\nKerja paruh waktu dari HP! Cukup like video, dapat Rp 50.000 per tugas.\nKamu sudah dapat komisi Rp 150.000. Untuk menarik dana, top up dulu Rp 200.000 ke rekening pembimbing.\nBatas waktu 30 menit. Hubungi WA admin: @kerja_cepat_88",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "legit-school-en",
+   "subset": "synthetic",
+   "app": "sms",
+   "language": "en",
+   "scam_type": "none",
+   "verdict": "safe",
+   "families": [],
+   "must_mention": [
+    {
+     "id": "room_change",
+     "variants": [
+      "room 4",
+      "room",
+      "class"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Riverside Language Centre",
+    "Text message - Today 08:30",
+    "Hi Rina, this is Dewi from the Riverside Language Centre front desk. Your Thursday class moved to room 4. No payment needed. If you have questions, call the office number on our website."
+   ],
+   "raw": "Riverside Language Centre\nText message - Today 08:30\nHi Rina, this is Dewi from the Riverside Language Centre front desk. Your Thursday class moved to room 4. No payment needed. If you have questions, call the office number on our website.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "my-romance-usdt",
+   "subset": "synthetic",
+   "app": "facebook",
+   "language": "my",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route",
+    "pressure",
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "top_up",
+     "variants": [
+      "500",
+      "၅၀၀",
+      "USDT ၅၀၀",
+      "USDT 500"
+     ]
+    },
+    {
+     "id": "guaranteed_profit",
+     "variants": [
+      "10%",
+      "၁၀%",
+      "အာမခံ",
+      "အမြတ်"
+     ]
+    },
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Linda",
+    "Active now",
+    "မင်္ဂလာပါရှင့်၊ ပုံလေးတွေ မြင်ပြီး ခင်ချင်လို့ပါ။ ကျွန်မ စင်ကာပူမှာ အလုပ်လုပ်တယ်။",
+    "၂ ပတ်အကြာ",
+    "ကျွန်မ ဦးလေးမှာ USDT ရင်းနှီးမြှုပ်နှံတဲ့ app ရှိတယ်။ တစ်ရက် ၁၀% အမြတ် အာမခံတယ်။",
+    "အရင်ဆုံး USDT ၅၀၀ ထည့်ကြည့်ပါ။ ဒီည နောက်ဆုံးပဲ၊ ဘယ်သူ့ကိုမှ မပြောပါနဲ့။ https://usdt-goldlink.example/join"
+   ],
+   "raw": "Linda\nActive now\nမင်္ဂလာပါရှင့်၊ ပုံလေးတွေ မြင်ပြီး ခင်ချင်လို့ပါ။ ကျွန်မ စင်ကာပူမှာ အလုပ်လုပ်တယ်။\n၂ ပတ်အကြာ\nကျွန်မ ဦးလေးမှာ USDT ရင်းနှီးမြှုပ်နှံတဲ့ app ရှိတယ်။ တစ်ရက် ၁၀% အမြတ် အာမခံတယ်။\nအရင်ဆုံး USDT ၅၀၀ ထည့်ကြည့်ပါ။ ဒီည နောက်ဆုံးပဲ၊ ဘယ်သူ့ကိုမှ မပြောပါနဲ့။ https://usdt-goldlink.example/join",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "romance-en",
+   "subset": "synthetic",
+   "app": "chat",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "pressure",
+    "payment_route",
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "guaranteed_profit",
+     "variants": [
+      "guaranteed",
+      "8%",
+      "8 percent"
+     ]
+    },
+    {
+     "id": "top_up",
+     "variants": [
+      "500",
+      "USD 500",
+      "top up",
+      "top-up",
+      "deposit"
+     ]
+    },
+    {
+     "id": "link",
+     "variants": [
+      "link",
+      "tautan",
+      "url",
+      "website",
+      "situs",
+      "လင့်",
+      "ลิงก์",
+      "ลิ้งค์",
+      "เว็บ"
+     ]
+    },
+    {
+     "id": "wrong_number_opening",
+     "variants": [
+      "wrong number",
+      "stranger"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Daniel",
+    "last seen recently",
+    "Hi Maria, sorry, wrong number! But your profile photo looks so kind.",
+    "It's ok :)",
+    "2 weeks later",
+    "I think about you every morning. You are special to me.",
+    "My uncle works at a trading firm. His app BrightCoin Pro gives 8% profit every day, guaranteed. I made USD 4,000 this week.",
+    "Start small, just top up USD 500 here: https://brightcoin-pro.example/join The bonus ends tonight, don't tell anyone yet."
+   ],
+   "raw": "Daniel\nlast seen recently\nHi Maria, sorry, wrong number! But your profile photo looks so kind.\nIt's ok :)\n2 weeks later\nI think about you every morning. You are special to me.\nMy uncle works at a trading firm. His app BrightCoin Pro gives 8% profit every day, guaranteed. I made USD 4,000 this week.\nStart small, just top up USD 500 here: https://brightcoin-pro.example/join The bonus ends tonight, don't tell anyone yet.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "romance-th",
+   "subset": "synthetic",
+   "app": "chat",
+   "language": "th",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route",
+    "pressure",
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "top_up",
+     "variants": [
+      "10000",
+      "10,000",
+      "เติมเงิน"
+     ]
+    },
+    {
+     "id": "guaranteed_profit",
+     "variants": [
+      "5%",
+      "รับประกัน",
+      "ไม่ขาดทุน",
+      "กำไร"
+     ]
+    },
+    {
+     "id": "account",
+     "variants": [
+      "บัญชี",
+      "account"
+     ]
+    },
+    {
+     "id": "secrecy",
+     "variants": [
+      "อย่าบอกใคร",
+      "ปิดบัง",
+      "เป็นความลับ",
+      "ความลับ"
+     ]
+    }
+   ],
+   "text_lines": [
+    "ฟ้า",
+    "ออนไลน์",
+    "สวัสดีค่ะ ขอโทษที่ทักผิดคนนะคะ แต่โปรไฟล์คุณดูใจดีมาก",
+    "ไม่เป็นไรครับ",
+    "3 สัปดาห์ต่อมา",
+    "คุยกับคุณทุกวันทำให้ฉันมีความสุขมาก ฉันทำงานอยู่สิงคโปร์ เหงามากเลย",
+    "ลุงของฉันมีแอปเทรดทองชื่อ GoldWave Asia ได้กำไรวันละ 5% รับประกันไม่ขาดทุน ฉันถอนได้แล้ว 80,000 บาท",
+    "ลองเติมเงิน 10,000 บาทก่อนนะคะ โอนเข้าบัญชีพี่เลี้ยงของเรา เลขบัญชี 123-4-56789-0 โปรหมดคืนนี้ อย่าบอกใครนะ"
+   ],
+   "raw": "ฟ้า\nออนไลน์\nสวัสดีค่ะ ขอโทษที่ทักผิดคนนะคะ แต่โปรไฟล์คุณดูใจดีมาก\nไม่เป็นไรครับ\n3 สัปดาห์ต่อมา\nคุยกับคุณทุกวันทำให้ฉันมีความสุขมาก ฉันทำงานอยู่สิงคโปร์ เหงามากเลย\nลุงของฉันมีแอปเทรดทองชื่อ GoldWave Asia ได้กำไรวันละ 5% รับประกันไม่ขาดทุน ฉันถอนได้แล้ว 80,000 บาท\nลองเติมเงิน 10,000 บาทก่อนนะคะ โอนเข้าบัญชีพี่เลี้ยงของเรา เลขบัญชี 123-4-56789-0 โปรหมดคืนนี้ อย่าบอกใครนะ",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  },
+  {
+   "id": "romance-th-en",
+   "subset": "synthetic",
+   "app": "chat",
+   "language": "en",
+   "scam_type": "romance_pig_butchering",
+   "verdict": "danger",
+   "families": [
+    "too_good",
+    "payment_route",
+    "pressure",
+    "identity"
+   ],
+   "must_mention": [
+    {
+     "id": "top_up",
+     "variants": [
+      "10000",
+      "10,000",
+      "เติมเงิน"
+     ]
+    },
+    {
+     "id": "guaranteed_profit",
+     "variants": [
+      "5%",
+      "รับประกัน",
+      "ไม่ขาดทุน",
+      "กำไร"
+     ]
+    },
+    {
+     "id": "account",
+     "variants": [
+      "บัญชี",
+      "account"
+     ]
+    },
+    {
+     "id": "secrecy",
+     "variants": [
+      "อย่าบอกใคร",
+      "ปิดบัง",
+      "เป็นความลับ",
+      "ความลับ"
+     ]
+    }
+   ],
+   "text_lines": [
+    "Hello, sorry I messaged the wrong person, but your profile looks very kind.",
+    "That's fine.",
+    "3 weeks later",
+    "Talking to you every day makes me so happy. I work in Singapore and I am very lonely.",
+    "My uncle has a gold trading app called GoldWave Asia. It makes 5% profit a day, no loss guaranteed. I already withdrew 80,000 baht.",
+    "Try topping up 10,000 baht first. Transfer to our mentor's account 123-4-56789-0. The promotion ends tonight, don't tell anyone."
+   ],
+   "raw": "Hello, sorry I messaged the wrong person, but your profile looks very kind.\nThat's fine.\n3 weeks later\nTalking to you every day makes me so happy. I work in Singapore and I am very lonely.\nMy uncle has a gold trading app called GoldWave Asia. It makes 5% profit a day, no loss guaranteed. I already withdrew 80,000 baht.\nTry topping up 10,000 baht first. Transfer to our mentor's account 123-4-56789-0. The promotion ends tonight, don't tell anyone.",
+   "source": "Rickaym/saferoute-scam-screenshots (CC BY-NC 4.0)"
+  }
+ ]
+}
