@@ -13,7 +13,6 @@
   <body>
     <header class="top">
       <a class="brand" href="https://yuanqianayla.com/project/phagex/">← PhageX case study</a>
-      <span class="privacy" title="Nothing you type leaves this page">Runs locally · nothing is uploaded</span>
     </header>
 
     <main class="shell">
@@ -32,10 +31,16 @@
       </section>
 
       <section class="stage-grid">
-        <div class="phone" aria-live="polite">
-          <div class="phone-bar"><span class="dot"></span><span id="phone-title">Unknown number</span></div>
-          <ol class="chat" id="chat"></ol>
-          <div class="controls">
+        <div class="device-col">
+          <div class="device" aria-live="polite">
+            <div class="screen">
+              <div class="status"><span class="time">9:41</span><span class="island"></span><span class="signal">●●● ᯤ ▮</span></div>
+              <div class="phone-bar"><span class="avatar"></span><span id="phone-title">Unknown number</span></div>
+              <ol class="chat" id="chat"></ol>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
+          <div class="controls bare">
             <button id="next" class="btn primary">Next message</button>
             <button id="play" class="btn">Play all</button>
             <button id="reset" class="btn ghost">Reset</button>
